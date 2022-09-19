@@ -1,3 +1,3 @@
 module com.github.agavrilov.logback {
-  requires org.slf4j;
+  requires ch.qos.logback.classic;
 }

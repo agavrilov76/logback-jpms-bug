@@ -1,12 +1,11 @@
 package com.github.agavrilov.logback;
 
-import org.slf4j.LoggerFactory;
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.jul.JULHelper;
 
 public class Main {
-  public static void main(String[] args) {
-    final var logger = LoggerFactory.getLogger(Main.class);
 
-    logger.debug("Debug message");
-    logger.info("Info message");
+  public static void main(String[] args) {
+    System.out.println("OK: " + JULHelper.asJULLevel(Level.INFO));
   }
 }
